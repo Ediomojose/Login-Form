@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+}
+
+main{
+    display: flex;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 24.444rem;
+    padding: .889rem;
+    border-radius: .556rem;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 .222rem 1.667rem rgba(0,0,0,0,1);
+    backdrop-filter: blur(5px);
+    height: 30rem;
+
+}
+
+section h1{
+    font-size: 1.778rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1rem 0 2rem 0;
+    margin-top: 1rem;
+}
+
+section p{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside button{
+    outline: none;
+    border: none;
+    padding: .389rem;
+    display: flex;
+    justify-content: space-between;
+    gap: .556rem;
+    align-items: center;
+    border-radius: .278rem;
+    cursor: pointer;
+    font-size: .833rem;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 1.111rem;
+    padding: 1.667rem 0 0 0rem ;
+    font-weight: bold;
+    font-style: italic;
+}
+
+form input{
+    padding: .778rem;
+    font-size: 1.111rem;
+    outline: none;
+    border: none;
+    border-radius: .278rem;
+}
+
+form a{
+    text-decoration: none;
+    text-align: right;
+    padding: .278rem 0 1rem 0;
+    color: #4f85e2;
+}
+
+form button{
+    padding: .778rem;
+    background: #4f85e2;
+    font-size: 1.111rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-radius: .278rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+/* for tablets */
+@media screen and (min-width: 481px) and (max-width: 912px) {
+}
+
+/* For Mobile */
+@media screen and (max-width: 480px) and (orientation: portrait){
+    body{
+       margin: 1rem;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    aside button{
+        font-size: .556rem;
+    }
+}
